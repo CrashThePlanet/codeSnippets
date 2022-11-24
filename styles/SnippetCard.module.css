@@ -1,0 +1,10 @@
+.content pre {
+
+}
+.copyIcon {
+    opacity: 0;
+    transition: 250ms;
+}
+.codeBlock:hover .copyIcon {
+    opacity: 1;
+}

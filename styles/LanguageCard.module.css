@@ -1,0 +1,18 @@
+.card {
+    min-width: max-content;
+}
+.card .seperator {
+    width: calc(100% - 64px);
+}
+
+.card .deleteAction {
+    transition: opacity 250ms;
+    transition: color 150ms;
+}
+.card:hover .deleteAction {
+    opacity: 100;
+}
+
+.card .deleteAction:hover {
+    color: #ff0000 !important;
+}

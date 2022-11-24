@@ -1,26 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --darkBg: 17,17,17;
+  --darkPrim: 25,25,25;
+  --fontColorDark: 204, 204, 204;
+
+  --lightBg: 149, 165, 166;
+  --lightPrim: 236, 240, 241;
+  --fontColorLight: var(--darkBg);
+
+  --accent: 71,178,158;
+
+  --finalBg: var(--lightBg);
+  --finalPrim: var(--lightPrim);
+  --finalFont: var(--fontColorLight)
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: rgb(var(--fontColorLight));
+}
+::selection {
+  background-color: rgb(var(--accent));
+  color: rgb(var(--fontColorLight));
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.bg {
+  background-color: rgb(var(--lightBg));
 }
-
-* {
-  box-sizing: border-box;
+.bgPrim {
+  background-color: rgb(var(--lightPrim));
+}
+.font {
+  color: rgb(var(--fontColorLight))
+}
+.bgAccent {
+  background-color: rgb(var(--accent))
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .bg {
+    background-color: rgb(var(--darkBg));
   }
-  body {
-    color: white;
-    background: black;
+  .bgPrim {
+    background-color: rgb(var(--darkPrim));
+  }
+  .font {
+    color: rgb(var(--fontColorDark));
+  }
+  html, body {
+    color: rgb(var(--fontColorDark));
+  }
+  :root {
+    --finalBg: var(--darkBg);
+    --finalPrim: var(--darkPrim);
+    --finalFont: var(--fontColorDark);
   }
 }

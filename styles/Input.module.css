@@ -1,0 +1,39 @@
+.InputWrapper {
+    position: relative;
+}
+.InputWrapper input,.InputWrapper textarea {
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(var(--finalFont));
+    outline: none;
+    background: transparent;
+    transition: 500ms;
+    min-height: 45px;
+}
+.InputWrapper label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 500ms;
+}
+.InputWrapper input:focus ~ label,
+.InputWrapper textarea:focus ~ label {
+    top: -15px;
+    color: rgb(var(--accent));
+    font-size: 12px;
+}
+.InputWrapper input:focus,
+.InputWrapper textarea:focus {
+    border-bottom: 1px solid rgb(var(--accent));
+}
+label.inputHasValue {
+    font-size: 12px !important;
+    top: -15px !important;
+}

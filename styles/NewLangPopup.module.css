@@ -1,0 +1,22 @@
+.wrapper .blackBG {
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4.4px);
+}
+.formWrapper {
+    min-width: min-content;
+    min-height: max-content;
+    font-size: 20px;
+}
+
+.formWrapper form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(var(--finalFont));
+    font-size: 20px;
+}
+.formWrapper form button {
+    background-color: rgb(var(--accent))
+}
+.formWrapper form button:first-of-type {
+    background-color: rgb(var(--finalBg))
+}

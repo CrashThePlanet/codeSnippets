@@ -1,0 +1,48 @@
+{
+    "langs": [
+        {
+            "lang": "css",
+            "img": "",
+            "id": "9f43a9d1-b770-4b25-8f23-cde66841430c",
+            "snippets": [
+                {
+                    "id": "2e0c2d99-91d5-495a-ad33-9a3503f49ef7",
+                    "headline": "test",
+                    "description": "ghdfgdfgz",
+                    "code": "tttttttttttttttttttttttttttttttt"
+                },
+                {
+                    "id": "95ec3f7d-6744-423e-912c-fdad8e29096e",
+                    "headline": "test snippet",
+                    "description": "i donmt just something lel\nkekw",
+                    "code": "copyToClipboard() {\n        navigator.clipboard.writeText(this.props.data.code);\n    }"
+                }
+            ]
+        },
+        {
+            "lang": "js",
+            "img": "",
+            "id": "a5e1459b-196a-46ba-9764-553e5599ca80",
+            "snippets": [
+                {
+                    "id": "6c4300df-b3cd-4c42-95f0-c6be642c6c36",
+                    "headline": "some js snippet",
+                    "description": "xfgnxfgnxfgn",
+                    "code": "lol"
+                }
+            ]
+        },
+        {
+            "lang": "html",
+            "img": "",
+            "id": "c6518c5f-4ee0-474c-a666-3d394977c6b5",
+            "snippets": []
+        },
+        {
+            "lang": "gg",
+            "img": "",
+            "id": "fb22a141-7711-4e3e-9e90-2860d869fed9",
+            "snippets": []
+        }
+    ]
+}
