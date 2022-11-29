@@ -1,6 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 const fs = require('fs');
+import path from 'path'
+
 
 type lang = {
     lang: string,
@@ -13,6 +15,7 @@ export default function handler(
     res:NextApiResponse<any>
 ) {
     if (req.method !== "POST") return;
-    const data:any = JSON.parse(fs.readFileSync("data.json", {encoding: "utf-8"}))
+    const dir = path.resolve('./public/');
+    const data:any = JSON.parse(fs.readFileSync(dir + "/data.json", {encoding: "utf-8"}))
     res.status(200).send({snippets: data.langs.find((lang: lang) => lang.id === req.body.langID).snippets})
 }

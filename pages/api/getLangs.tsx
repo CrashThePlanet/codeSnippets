@@ -1,6 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 const fs = require('fs');
+import path from 'path'
+
 
 type lang = {
     lang: string,
@@ -14,8 +16,8 @@ export default function handler(
     res:NextApiResponse<Array<lang>>
 ) {
     if (req.method !== "GET") return;
-
-    const data:any = JSON.parse(fs.readFileSync("data.json", {encoding: "utf-8"}))
+    const dir = path.resolve('./public/');
+    const data:any = JSON.parse(fs.readFileSync(dir + "/data.json", {encoding: "utf-8"}))
     const langs = data.langs.map((lang: lang) => {
         return {
             lang: lang.lang,
